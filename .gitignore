@@ -1,0 +1,17 @@
+# Generated build and runtime data
+/out/
+/runs/
+/received/
+/archived-batch-check/
+/inputs/*.bin
+*.class
+*.zip
+*.tmp
+# Local configuration and editor files
+.env
+.env.*
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

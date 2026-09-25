@@ -1,0 +1,9 @@
+elapsed_ms,role,transfer_id,event,type,sequence,bytes,detail
+0.894,sender,bcf6be90-1259-4bac-94a0-27e40943463d,SEND,START,-1,105,""
+0.954,sender,bcf6be90-1259-4bac-94a0-27e40943463d,DROP,START,-1,105,"random shim loss"
+35.251,sender,bcf6be90-1259-4bac-94a0-27e40943463d,TIMEOUT,START,-1,0,""
+35.359,sender,bcf6be90-1259-4bac-94a0-27e40943463d,RETRANSMIT,START,-1,0,""
+35.389,sender,bcf6be90-1259-4bac-94a0-27e40943463d,SEND,START,-1,105,""
+35.401,sender,bcf6be90-1259-4bac-94a0-27e40943463d,DROP,START,-1,105,"random shim loss"
+67.255,sender,bcf6be90-1259-4bac-94a0-27e40943463d,TIMEOUT,START,-1,0,""
+67.673,sender,,STATE,UNKNOWN,-1,0,"FAILED"

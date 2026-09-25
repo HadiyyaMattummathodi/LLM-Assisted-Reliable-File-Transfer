@@ -1,0 +1,29 @@
+LOCAL MODEL - VERSION 7
+
+Windows acceptance has been reviewed using Ollama 0.34.2 and qwen2.5:1.5b. See docs/WINDOWS-ACCEPTANCE.md for actual outcomes and the remaining prose limitation. The steps below are for reproducing the setup, not a request to repeat completed runs.
+
+Your existing Ollama installation and qwen2.5:1.5b download can be reused. No new account, key or hosted API is used by this program. Java calls only http://127.0.0.1:11434/api/chat.
+
+1. Open Ollama.
+2. In PowerShell, check: ollama run qwen2.5:1.5b "Reply with OK"
+3. In the project folder, run .\chat.cmd. Confirm "Chat interface version: 7".
+4. Follow the real-model acceptance commands in README.md. Enter them at You>, not at the PowerShell prompt.
+
+To update, extract the new ZIP to a different folder and run update-existing.cmd from that NEW folder with your existing project path as the argument. Running the old updater from the old folder only rebuilds the old files. The updater preserves inputs, received and runs.
+
+The LLM produces six-field JSON for send/status/explain. Java validates every field and dispatches only fixed operations. Queries cannot carry hidden transfer parameters. Unknown fields, unsafe filenames, arbitrary destinations and out-of-range settings are rejected. The file-transfer transport is UDP; the separate model API uses HTTP.
+
+For analysis, Java displays a frozen measurement snapshot, asks for two or three short observations, checks field names and decimal numbers, then renders the measured values beside the model's comments. Version 7 supplies separate DATA-drop, ACK-drop and duplicate-DATA fields and focuses loss/duplicate questions on the relevant measurements. It does not silently replace failed model output with predefined prose.
+
+An invalid or truncated analysis gets one retry using the same snapshot. A second failure is logged and reported; it does not redo the transfer. Checking numeric references does not establish the truth of units, qualitative claims, number words or causal explanations. Read the actual comments before treating the explanation as successful.
+
+Every model proposal, response and validation decision is retained in conversation.jsonl. The optional Python HTTP adapter test returns fixture responses; it is not a live-model test. Do not run that fixture on port 11434 while Ollama is running. The usual Java-only verify.cmd does not need Python or a model server.
+
+Troubleshooting:
+- Cannot reach Ollama: open its application; do not start another server if one already occupies port 11434.
+- Model not found: check ollama list; use ollama pull qwen2.5:1.5b if it is missing.
+- Port 9000 busy: stop another receiver/chat transfer before starting a new one.
+- Empty scenario proposal: use the explicit phrase "using the baseline scenario" and retain the rejection for review.
+- No useful explanation: retain conversation.jsonl and the related transfer logs. A syntactically valid response can still be unhelpful.
+
+RFT_MODEL is a trusted startup setting; allowed values in this source are qwen2.5:1.5b, qwen2.5:3b and qwen2.5:7b. Do not change the model during a controlled experiment, and record the actual model and Ollama version used in the real demonstration. No larger-model download is needed merely to run the default project.

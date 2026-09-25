@@ -1,0 +1,2 @@
+elapsed_ms,role,transfer_id,event,type,sequence,bytes,detail
+115.860,receiver,,STATE,UNKNOWN,-1,0,"ABORTED"

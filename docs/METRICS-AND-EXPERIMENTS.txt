@@ -1,0 +1,3 @@
+The current authoritative experiment method and metric definitions are in EXPERIMENTS.md.
+Version 7 runs ten configurations with five repetitions each by default.
+The former eight-single-trial script has been replaced; old logs remain valid historical evidence of their own runs.

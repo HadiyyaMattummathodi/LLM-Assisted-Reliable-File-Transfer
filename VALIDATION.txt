@@ -1,0 +1,68 @@
+VERSION 7 - WINDOWS ACCEPTANCE REVIEW
+
+Evidence: assignment-runs-v7.zip, uploaded after running verify.cmd,
+experiments.cmd and the real Ollama chat on the submission laptop.
+All 14 Java source hashes match the experiment manifest. No Java source was
+changed during this review. This handoff updates documentation and includes
+the original Windows evidence; it does not require another experiment run.
+
+ENVIRONMENT
+Windows 11 (amd64), Java 1.8.0_422.
+Ollama 0.34.2; qwen2.5:1.5b; listed model ID 65ec06548149.
+The source uses Java standard APIs and no third-party transfer libraries.
+
+AUTOMATED CHECKS
+The supplied Windows terminal output reports Build successful and all 124
+Java checks passed: 60 interface/validation checks, 13 reliable-transfer
+checks and 51 adversarial protocol/lifecycle checks. Hash mismatch, permanent
+loss, exhausted retries and a busy receiver port are intentional negative
+tests. Their failures are retained in the logs.
+
+EXPERIMENTS
+Batch: experiments-v7-20260924-013632-336-22e69d90.
+50 measured trials, ten configurations, five repetitions; one excluded
+warm-up. All measured trials completed. The required small/large baseline,
+3% lossy and delayed scenarios are present, with matched timeout/window
+comparisons. Seeds, input/source hashes, settings and environment are saved.
+
+INDEPENDENT REVIEW OF THE UPLOAD
+64 completed transfers and 128 endpoint event logs reconciled across the
+batch, successful fault tests and chat transfers. Checked counters, packet
+and byte accounting, cancellations, drop/duplicate types, unique delivery,
+sequence windows, eligible RTT samples, RTT statistics, goodput, overhead,
+plan/result consistency and all 496 numerical aggregate values.
+All 14 Java source hashes match. No unexpected failed measured trial found.
+
+The original Windows batch audit reports 51 source/output byte comparisons.
+Received binary files were not uploaded. The reviewer did not independently
+compare missing received files; this review verifies logs and hash consistency.
+
+REAL MODEL
+Session: chat-20260924-014215-613-54428eff.
+Natural-language lossy send succeeded: 1048576 bytes, 4.501828 seconds,
+1.863378 Mbps. It recorded 31 dropped DATA attempts, 36 dropped ACKs,
+67 retries and 36 duplicate DATA arrivals.
+
+Natural-language live status showed RUNNING with 365568 useful bytes and
+0.089554 Mbps average goodput so far. The delayed transfer later completed
+with 1048576 bytes, 92.830532 seconds and no retransmissions.
+
+Both explanation requests first repeated a field and were rejected. Their
+bounded retries passed the structural/numeric checks. The lost-ACK explanation
+is supported by the per-sequence packet records. The loss explanation's
+phrase "not delivered" is ambiguous: original attempts were dropped, but
+retries recovered the entire file. Numerical consistency does not prove
+semantic accuracy of model prose. This is a documented model limitation.
+
+The :unsafe validator demonstration rejected ../private.txt and started no
+transfer. It is a direct Java validator test, not a natural-language model
+refusal. The real-model requests and all accepted/rejected replies remain
+unchanged in the included evidence.
+
+HANDOFF
+Implementation and required experimental behavior have been demonstrated
+on Windows. No code fix or rerun is required by this evidence review.
+See README.md, docs/REQUIREMENTS.md and docs/WINDOWS-ACCEPTANCE.md.
+Still required: final protocol/diagram, evaluation report and recorded/live
+demonstration, plus accurate contribution and AI-assistance disclosure.
+This review is not a grade prediction.

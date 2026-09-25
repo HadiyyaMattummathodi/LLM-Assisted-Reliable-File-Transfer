@@ -1,0 +1,4 @@
+PASS: 51 completed transfers; 102 endpoint event logs reconciled.
+Checks: counters, byte totals, drop/duplicate types, sequence/window limits, unique delivery, every RTT sample, mean/p95/variation, goodput and overhead.
+Planned measured trials reconciled: 50. Independent saved-file byte/hash checks: 51.
+A logs-only archive cannot independently prove the bytes of missing source/output files.

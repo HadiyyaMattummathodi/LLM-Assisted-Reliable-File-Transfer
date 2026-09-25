@@ -1,0 +1,13 @@
+elapsed_ms,role,transfer_id,event,type,sequence,bytes,detail
+2.528,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,RECEIVE,START,-1,103,""
+2.738,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,START_ACCEPTED,START,-1,0,"negotiated chunk=1024"
+2.823,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,SEND,READY,-1,40,""
+2.940,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,EMIT,READY,-1,40,""
+3.214,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,RECEIVE,DATA,0,82,""
+3.330,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,ACCEPT_DATA,DATA,0,46,"unique file bytes received"
+3.405,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,SEND,ACK,0,36,""
+3.509,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,EMIT,ACK,0,36,""
+3.669,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,RECEIVE,FIN,-1,68,""
+3.847,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,SEND,ERROR,-1,57,""
+3.968,receiver,f8ecde02-db99-4ec3-9c02-8c16dfca2cd3,EMIT,ERROR,-1,57,""
+4.047,receiver,,STATE,UNKNOWN,-1,0,"FAILED"

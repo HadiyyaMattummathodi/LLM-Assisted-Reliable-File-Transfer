@@ -1,0 +1,10 @@
+elapsed_ms,role,transfer_id,event,type,sequence,bytes,detail
+2.400,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,RECEIVE,START,-1,103,""
+2.466,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,START_ACCEPTED,START,-1,0,"negotiated chunk=1024"
+2.488,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,SEND,READY,-1,40,""
+2.529,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,EMIT,READY,-1,40,""
+2.811,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,RECEIVE,FIN,-1,68,""
+3.539,receiver,,STATE,UNKNOWN,-1,0,"VERIFIED"
+3.553,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,FILE_VERIFIED,FIN,-1,0,"SHA-256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+3.655,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,SEND,DONE,-1,68,""
+3.704,receiver,95ef22c3-1116-48ab-a2c5-97d0e9d6583e,EMIT,DONE,-1,68,""

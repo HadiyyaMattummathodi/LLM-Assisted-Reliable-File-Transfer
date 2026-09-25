@@ -1,0 +1,407 @@
+{
+  "archive": "assignment-runs-v7.zip",
+  "batch": "experiments-v7-20260924-013632-336-22e69d90",
+  "completed_transfers_audited": 64,
+  "endpoint_logs_audited": 128,
+  "batch_measured_trials": 50,
+  "batch_warmups": 1,
+  "batch_failures": 0,
+  "aggregate_numeric_values_recomputed": 496,
+  "source_files_matched": 14,
+  "actual_saved_files_recompared_by_reviewer": 0,
+  "windows_original_audit_reported_byte_checks": 51,
+  "ollama_version": "0.34.2",
+  "model": "qwen2.5:1.5b",
+  "model_id": "65ec06548149",
+  "live_status": {
+    "state": "RUNNING",
+    "filename": "large.bin",
+    "file_size_bytes": "1048576",
+    "payload_bytes": "365568",
+    "elapsed_seconds": "32.656747",
+    "goodput_mbps": "0.089554",
+    "scenario": "delayed",
+    "packets_attempted": "359",
+    "packets_received": "358",
+    "retransmissions": "0",
+    "timeouts": "0",
+    "duplicates": "0",
+    "shim_drops": "0",
+    "rtt_samples": "357",
+    "rtt_mean_ms": "90.993292",
+    "rtt_p95_ms": "110.333300",
+    "window_bytes": "1024",
+    "timeout_ms": "250",
+    "loss_probability": "0.0",
+    "one_way_base_delay_ms": "25",
+    "one_way_jitter_range_ms": "25",
+    "dropped_data": "0",
+    "duplicate_acks": "0",
+    "retransmission_ratio": "0.000000"
+  },
+  "chat": "chat-20260924-014215-613-54428eff",
+  "lossy_chat_summary": {
+    "role": "sender",
+    "state": "COMPLETED",
+    "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+    "filename": "large.bin",
+    "file_size_bytes": "1048576",
+    "payload_bytes": "1048576",
+    "elapsed_seconds": "4.501828",
+    "goodput_mbps": "1.863378",
+    "emitted_udp_mbps": "1.997004",
+    "packets_attempted": "1093",
+    "packets_emitted": "1062",
+    "packets_received": "1026",
+    "packets_acknowledged": "1026",
+    "timeouts": "67",
+    "duplicates": "0",
+    "retransmissions": "67",
+    "duplicate_data": "0",
+    "duplicate_acks": "0",
+    "duplicate_control": "0",
+    "out_of_order_data": "0",
+    "data_attempts": "1091",
+    "data_retransmissions": "67",
+    "retransmission_ratio": "0.061299",
+    "shim_drops": "31",
+    "shim_corruptions": "0",
+    "invalid_packets": "0",
+    "dropped_data": "31",
+    "dropped_acks": "0",
+    "dropped_control": "0",
+    "cancelled_packets": "0",
+    "cancelled_udp_bytes": "0",
+    "attempted_udp_bytes": "1156631",
+    "emitted_udp_bytes": "1123771",
+    "received_udp_bytes": "36972",
+    "rtt_samples": "964",
+    "rtt_mean_ms": "3.601294",
+    "rtt_p95_ms": "17.072900",
+    "rtt_variation_ms": "0.073584",
+    "sha256": "ffec217fb7dfda249f567414fae7a5fdc8b9984c2cadcaf76a6a69154e18c1d2",
+    "scenario": "lossy",
+    "seed": "42",
+    "chunk_bytes": "1024",
+    "window_bytes": "65536",
+    "timeout_ms": "250",
+    "max_retries": "20",
+    "loss_probability": "0.03",
+    "corruption_probability": "0.0",
+    "one_way_base_delay_ms": "0",
+    "one_way_jitter_range_ms": "0",
+    "java_version": "1.8.0_422",
+    "os": "Windows 11",
+    "receiver_state": "VERIFIED",
+    "receiver_payload_bytes": "1048576",
+    "receiver_duplicates": "36",
+    "receiver_invalid_packets": "0",
+    "receiver_shim_drops": "36",
+    "receiver_attempts": "1062",
+    "receiver_emitted": "1026",
+    "receiver_received": "1062",
+    "receiver_duplicate_data": "36",
+    "receiver_duplicate_control": "0",
+    "receiver_dropped_acks": "36",
+    "receiver_dropped_control": "0",
+    "receiver_out_of_order_data": "617",
+    "both_directions_attempted_udp_bytes": "1194899",
+    "both_directions_emitted_udp_bytes": "1160743",
+    "attempted_overhead_share": "0.122456",
+    "emitted_overhead_share": "0.096634",
+    "bytes_equal": "true",
+    "received_file": "received\\902edc8e-2597-4e9b-8bf8-fce81dbc78c5-large.bin",
+    "run_folder": "runs\\chat-transfer-lossy-20260924-014224-928-66615368"
+  },
+  "model_first_attempt_rejections": 2,
+  "model_accepted_explanations": 2,
+  "unsafe_command_rejected": true,
+  "intentional_failed_endpoints": [
+    [
+      "test-total-loss-20260924-013622-631-060bb0d8",
+      "FAILED"
+    ],
+    [
+      "test-total-loss-20260924-013622-631-060bb0d8",
+      "ABORTED"
+    ],
+    [
+      "test-data-retry-budget-20260924-013623-427-e96978ab",
+      "FAILED"
+    ],
+    [
+      "test-end-to-end-hash-20260924-013623-418-bd340ff9",
+      "FAILED"
+    ]
+  ],
+  "case_averages": [
+    {
+      "case_id": "baseline-small.bin",
+      "goodput_mbps_mean": "41.188816",
+      "goodput_mbps_sd": "4.488391",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.073067",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "baseline-large.bin",
+      "goodput_mbps_mean": "152.194099",
+      "goodput_mbps_sd": "11.469498",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.065926",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "lossy-small.bin",
+      "goodput_mbps_mean": "6.203167",
+      "goodput_mbps_sd": "12.195858",
+      "retransmissions_mean": "2.400000",
+      "emitted_overhead_share_mean": "0.114741",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "lossy-large.bin",
+      "goodput_mbps_mean": "1.364217",
+      "goodput_mbps_sd": "0.185503",
+      "retransmissions_mean": "61.600000",
+      "emitted_overhead_share_mean": "0.092636",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "delayed-small.bin",
+      "goodput_mbps_mean": "0.863174",
+      "goodput_mbps_sd": "0.064716",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.073067",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "delayed-large.bin",
+      "goodput_mbps_mean": "2.316564",
+      "goodput_mbps_sd": "0.029099",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.065926",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "short-timeout-small",
+      "goodput_mbps_mean": "0.870546",
+      "goodput_mbps_sd": "0.034968",
+      "retransmissions_mean": "91.600000",
+      "emitted_overhead_share_mean": "0.748215",
+      "rtt_mean_ms_n": "0"
+    },
+    {
+      "case_id": "short-timeout-large",
+      "goodput_mbps_mean": "2.328851",
+      "goodput_mbps_sd": "0.031414",
+      "retransmissions_mean": "2678.800000",
+      "emitted_overhead_share_mean": "0.741310",
+      "rtt_mean_ms_n": "0"
+    },
+    {
+      "case_id": "narrow-window-small",
+      "goodput_mbps_mean": "0.082979",
+      "goodput_mbps_sd": "0.000857",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.073067",
+      "rtt_mean_ms_n": "5"
+    },
+    {
+      "case_id": "wide-window-large",
+      "goodput_mbps_mean": "4.191950",
+      "goodput_mbps_sd": "0.047750",
+      "retransmissions_mean": "0.000000",
+      "emitted_overhead_share_mean": "0.065926",
+      "rtt_mean_ms_n": "5"
+    }
+  ],
+  "example_lost_ack_sequence": "90",
+  "example_trace": {
+    "sender": [
+      {
+        "elapsed_ms": "58.343",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "SEND",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "58.673",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "EMIT",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "311.219",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "TIMEOUT",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "0",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "311.225",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "RETRANSMIT",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "0",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "311.235",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "SEND",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "311.253",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "EMIT",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "313.176",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "RECEIVE",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "36",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "313.190",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "ACKNOWLEDGED",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "0",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "313.198",
+        "role": "sender",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "CONFIRM_DATA",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "1024",
+        "detail": "unique file bytes acknowledged"
+      }
+    ],
+    "receiver": [
+      {
+        "elapsed_ms": "67.756",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "RECEIVE",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "67.780",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "OUT_OF_ORDER",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "0",
+        "detail": "arrived before missing sequence=48"
+      },
+      {
+        "elapsed_ms": "67.794",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "ACCEPT_DATA",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1024",
+        "detail": "unique file bytes received"
+      },
+      {
+        "elapsed_ms": "67.814",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "SEND",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "36",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "67.828",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "DROP",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "36",
+        "detail": "random shim loss"
+      },
+      {
+        "elapsed_ms": "316.352",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "RECEIVE",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "1060",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "316.369",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "DUPLICATE",
+        "type": "DATA",
+        "sequence": "90",
+        "bytes": "0",
+        "detail": "duplicate DATA; acknowledge without writing twice"
+      },
+      {
+        "elapsed_ms": "316.380",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "SEND",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "36",
+        "detail": ""
+      },
+      {
+        "elapsed_ms": "316.399",
+        "role": "receiver",
+        "transfer_id": "902edc8e-2597-4e9b-8bf8-fce81dbc78c5",
+        "event": "EMIT",
+        "type": "ACK",
+        "sequence": "90",
+        "bytes": "36",
+        "detail": ""
+      }
+    ]
+  },
+  "explanation_quality_note": "Retry succeeded after duplicate-field rejection. Lost-ACK explanation is supported by packet events. \"Not delivered\" must mean the original dropped attempts, not permanent missing file bytes. Decimals/references are validated; unrestricted prose is not semantically proved."
+}
