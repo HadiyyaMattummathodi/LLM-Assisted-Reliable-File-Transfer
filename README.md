@@ -257,4 +257,4 @@ This is an educational, single-transfer application using localhost. It buffers 
 
 Reported byte totals count custom protocol datagrams and exclude UDP, IP and link-layer headers. The loss/delay layer operates above the operating-system socket. Results describe this controlled local setup and are not measurements of Internet performance.
 
-The Java source and documentation were developed with ChatGPT/Codex assistance. Qwen through Ollama provides the runtime language-model interface. See [AI-ASSISTANCE.txt](AI-ASSISTANCE.txt) for the assistance record.
+The Java source and documentation were developed with ChatGPT/Codex assistance. Qwen through Ollama provides the runtime language-model interface. 
