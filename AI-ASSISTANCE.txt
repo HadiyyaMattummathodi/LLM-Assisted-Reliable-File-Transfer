@@ -1,5 +1,0 @@
-AI assistance record for your final disclosure
-
-ChatGPT assisted with interpreting the supplied assignment and class transcript, designing and generating this Java networking starter, creating Windows launchers and explanatory notes, and running reliability and measurement checks in its execution environment. Standard Java APIs are used; there are no third-party code libraries in this starter.
-
-Before submission, review and adapt the code, record the actual model/tool labels used, explain your own implementation and experimental work, and disclose any further assistance. The implemented interface uses Ollama with Qwen2.5 1.5B by default; record the actual installed Ollama version and selected model/tag. ChatGPT also assisted with this interface, strict JSON validation, measurement-grounded output handling and adapter tests. The adapter was tested with a deterministic local HTTP test double, not a real LLM in the assistant environment. You must run the real model for the demonstration. This record is a starting point for an accurate disclosure, not a claim that the complete assignment is finished.
